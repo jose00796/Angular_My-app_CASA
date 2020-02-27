@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Migdaly es Preciosa';
   show:boolean = true;
+  calc:number = 0;
 }
