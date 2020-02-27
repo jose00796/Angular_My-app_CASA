@@ -6,6 +6,8 @@
     <button class="btn btn-warning" (click) = "calc = calc + 1">+</button>
     <button class="btn btn-warning" (click) = "calc = calc - 1">-</button>
 
+    <p *ngIf = "EsMuyListo()">Super Programador Nojoda</p>
+
     <p *ngIf = "calc >= 6">Alta Lacra</p>
     <p *ngIf = "calc == 5">Aprobado</p>
     <p *ngIf = "calc <= 4">Un Pedro Cualquiera</p>
