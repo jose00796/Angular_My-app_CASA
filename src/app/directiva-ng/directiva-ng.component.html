@@ -1,8 +1,12 @@
-<h1 class="container bg-dark text-white text-center my-4 py-4">NgIf = {{show}}</h1>
+<h1 class="container bg-dark text-white text-center my-4 py-4">NgClass</h1>
 <h1 class="container bg-dark text-white text-center my-4 py-4">Calcular = {{calc}}</h1>
 
 <div class="container" >
     <button class="btn btn-warning" (click) = "show=! show" >Accion</button>
+
+    <button class="btn btn-danger" (click) = "activo = 'primero'">Primero</button>
+    <button class="btn btn-dark" (click) = "activo = 'segundo'">Sengundo</button>
+
     <button class="btn btn-warning" (click) = "calc = calc + 1">+</button>
     <button class="btn btn-warning" (click) = "calc = calc - 1">-</button>
 
@@ -12,9 +16,11 @@
     <p *ngIf = "calc == 5">Aprobado</p>
     <p *ngIf = "calc <= 4">Un Pedro Cualquiera</p>
 
-    <p class="text-info" *ngIf = "show; else showDos">En Ciudad Gótica, Arthur Fleck es un comediante con problemas mentales que es maltratado por la sociedad.</p>
+    <p class="text-info d-none" [ngClass]="{'d-block':activo == 'primero'}">
+                                
+        En Ciudad Gótica, Arthur Fleck es un comediante con problemas mentales
+    que es maltratado por la sociedad.</p>
 
-    <ng-template #showDos>
-        <p class="text-danger">Entonces cae en una espiral descendiente de revolución y crimen que lo lleva cara a cara con su alter ego: el Guasón.</p>
-    </ng-template> 
+    <p class="text-danger d-none" [ngClass] = "{'d-block': activo == 'segundo'}">Entonces cae en una espiral descendiente de revolución y crimen que lo lleva cara a cara con su alter ego:
+    el Guasón.</p>
 </div>
