@@ -24,28 +24,39 @@
 </div>
 
 <div class="container">
-    <ul>
-        <li *ngFor = "let Gustos of MisGustos"> {{Gustos}}</li>
+
+    <h1 class="container mt-4 bg-dark text-white text-center display-5 font-italic">Gustos del Dr.Sensual</h1>
+    
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor = "let Gustos of MisGustos"> {{Gustos}}</li>
     </ul>
 
-    <table class="table">
+    <h1 class="container mt-4 bg-dark text-white text-center display-5 font-italic">Perras que me han Rechazado</h1>
+    
+    <ul class="list-group">
+        <li class="list-group-item" *ngFor = "let Brujas of Perras"> {{Brujas}}</li>
+    </ul>
+
+    <h1 class="container mt-4 bg-dark text-white text-center display-5 font-italic">AC-Pirata</h1>
+    <table class="table table-bordered table-hover">
+        
         <thead> 
             <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>
-                <th scope="col">Cedula</th>
-                <th scope="col">Edo_Civil</th>
+                <th class="text-center" scope="col">ID</th>
+                <th class="text-center" scope="col">Nombre</th>
+                <th class="text-center" scope="col">Apellido</th>
+                <th class="text-center" scope="col">Cedula</th>
+                <th class="text-center" scope="col">Edo_Civil</th>
             </tr>
         </thead>
 
         <tbody>
             <tr *ngFor = "let persona of personas; index as i">
-                <th scope = "row">{{i + 1}}</th>
-                <td>{{persona.nombre}}</td>
-                <td>{{persona.apellido}}</td>
-                <td>{{persona.cedula}}</td>
-                <td>{{persona.edo_civil}}</td>
+                <th class="text-center" scope = "row">{{i + 1}}</th>
+                <td class="text-center">{{persona.nombre}}</td>
+                <td class="text-center">{{persona.apellido}}</td>
+                <td class="text-center">{{persona.cedula}}</td>
+                <td class="text-center">{{persona.edo_civil}}</td>
             </tr>
         </tbody>
     </table>

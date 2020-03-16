@@ -13,6 +13,7 @@ export class DirectivaNGComponent implements OnInit {
   activo:string;
 
   MisGustos:string[] = ['Mujeres', 'Dulces', 'Cafe', 'Futbol', 'Anime', 'Musica'];
+  Perras:string[] = ['Daniela', 'Dannesa', 'Ibelise'];
 
   personas:Array<any> = [
     {nombre:'Jose', apellido:'Machado', cedula:25418204, edo_civil:'Soltero'},
