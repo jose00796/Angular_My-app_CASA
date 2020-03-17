@@ -8,11 +8,16 @@ import { HorarioComponent } from './horario/horario.component';
 import { CabeceraComponent } from './cabecera/cabecera.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
 
 const routes: Routes = [
   { path: 'horario', component: HorarioComponent },
-  { path: 'directiva', component: DirectivaNGComponent },
+  { path: 'lista', component: DirectivaNGComponent },
   { path: 'contacto', component: ContactoComponent },
+  { path: 'nosotros', component: NosotrosComponent },
+  { path: '', component: InicioComponent, pathMatch: 'full' },
+  { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -22,7 +27,9 @@ const routes: Routes = [
     HorarioComponent,
     CabeceraComponent,
     FooterComponent,
-    ContactoComponent
+    ContactoComponent,
+    InicioComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
