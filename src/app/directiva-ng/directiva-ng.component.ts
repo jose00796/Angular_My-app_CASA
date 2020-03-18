@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivaNGComponent implements OnInit {
 
-  MisGustos:string[] = ['Mujeres', 'Dulces', 'Cafe', 'Futbol', 'Anime', 'Musica'];
+  MisGustos:string[] = ['Mujeres', 'Dulces', 'Perros', 'Cafe', 'Futbol', 'Anime', 'Musica'];
   Perras:string[] = ['Daniela', 'Dannesa', 'Ibelise'];
 
   personas:Array<any> = [
@@ -16,6 +16,7 @@ export class DirectivaNGComponent implements OnInit {
     {nombre:'Franmy', apellido:'Tarazona', cedula:27420309, edo_civil:'Soltero'},
     {nombre:'Pedro', apellido:'Rosal', cedula:25890567, edo_civil:'Soltero'},
     {nombre:'Esmeralda', apellido:'Fuentes', cedula:6102995, edo_civil:'Casado'},
+    {nombre:'Luis', apellido:'Fuentes', cedula:27365237, edo_civil:'Soltero'},
   ];
 
   constructor() { }

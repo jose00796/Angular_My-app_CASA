@@ -38,4 +38,8 @@ export class EquipoService {
    ObtenerEquipo(){
       return this.equipo;
    }
+
+   ObtenerUno(i){
+     return this.equipo[i];
+   }
 }
