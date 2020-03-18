@@ -1,5 +1,5 @@
 <div class="bg-dark text-white py-5">
-    <h1>Encabezado</h1>
+    <h1 class="text-center font-italic">Primera Practica de Angular hecha a los Coñazos</h1>
 </div>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-danger">
@@ -10,24 +10,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active" routerLinkActive = "active">
-          <a class="nav-link" [routerLink] = "['/']">Inicio <span class="sr-only">(current)</span></a>
+          <a class="nav-link text-white" [routerLink] = "['/']">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item" routerLinkActive = "active">
-          <a class="nav-link" [routerLink] = "['/horario']">Horario</a>
+          <a class="nav-link text-white" [routerLink] = "['/horario']">Horario</a>
         </li>
         <li class="nav-item" routerLinkActive = "active">
-            <a class="nav-link" [routerLink] = "['/lista']">Listas</a>
+            <a class="nav-link text-white" [routerLink] = "['/lista']">Listas</a>
         </li>
         <li class="nav-item" routerLinkActive = "active">
-            <a class="nav-link" [routerLink] = "['/contacto']">Contacto</a>
+            <a class="nav-link text-white" [routerLink] = "['/contacto']">Contacto</a>
         </li>
         <li class="nav-item" routerLinkActive = "active">
-          <a class="nav-link" [routerLink] = "['/nosotros']" tabindex="-1" aria-disabled="true">Nosotros</a>
+          <a class="nav-link text-white" [routerLink] = "['/nosotros']" tabindex="-1" aria-disabled="true">Nosotros</a>
         </li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
     </div>
   </nav>

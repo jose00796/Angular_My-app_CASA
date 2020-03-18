@@ -7,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectivaNGComponent implements OnInit {
 
-  show:boolean = true;
-  materia:string = 'programacion';
-  calc:number = 0;
-  activo:string;
-
   MisGustos:string[] = ['Mujeres', 'Dulces', 'Cafe', 'Futbol', 'Anime', 'Musica'];
   Perras:string[] = ['Daniela', 'Dannesa', 'Ibelise'];
 
@@ -22,16 +17,6 @@ export class DirectivaNGComponent implements OnInit {
     {nombre:'Pedro', apellido:'Rosal', cedula:25890567, edo_civil:'Soltero'},
     {nombre:'Esmeralda', apellido:'Fuentes', cedula:6102995, edo_civil:'Casado'},
   ];
-
-
-  EsMuyListo()
-  {
-    if(this.calc > 9 && this.materia == 'programacion'){
-        return true;
-    }else{
-      return false;
-    }
-  }
 
   constructor() { }
 

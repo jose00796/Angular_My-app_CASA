@@ -2,6 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
+//Servicios
+
+import { EquipoService } from './equipo.service';
+
+//Componentes
 import { AppComponent } from './app.component';
 import { DirectivaNGComponent } from './directiva-ng/directiva-ng.component';
 import { HorarioComponent } from './horario/horario.component';
