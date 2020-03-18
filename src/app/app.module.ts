@@ -40,7 +40,9 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [
+    EquipoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
