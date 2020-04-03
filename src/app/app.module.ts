@@ -16,6 +16,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { EquipoComponent } from './equipo/equipo.component';
+import { RepasoComponent } from './repaso/repaso.component';
 
 const routes: Routes = [
   { path: 'horario', component: HorarioComponent },
@@ -37,7 +38,8 @@ const routes: Routes = [
     ContactoComponent,
     InicioComponent,
     NosotrosComponent,
-    EquipoComponent
+    EquipoComponent,
+    RepasoComponent
   ],
   imports: [
     BrowserModule,
