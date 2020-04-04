@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 //Servicios
 
 import { EquipoService } from './equipo.service';
+import { RepasoService } from './repaso.service';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -24,6 +25,7 @@ const routes: Routes = [
   { path: 'contacto', component: ContactoComponent },
   { path: 'equipo/:id', component: EquipoComponent },
   { path: 'nosotros', component: NosotrosComponent },
+  { path: 'repaso', component: RepasoComponent },
   { path: '', component: InicioComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
@@ -46,7 +48,8 @@ const routes: Routes = [
     RouterModule.forRoot(routes)
   ],
   providers: [
-    EquipoService
+    EquipoService,
+    RepasoService
   ],
   bootstrap: [AppComponent]
 })

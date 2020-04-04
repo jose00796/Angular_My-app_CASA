@@ -1,0 +1,23 @@
+.btn-warning{
+    margin-top: 20px;
+    margin-left: 320px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-danger{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.btn-primary{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}

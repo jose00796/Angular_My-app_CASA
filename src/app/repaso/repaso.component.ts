@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RepasoService } from './../repaso.service';
 
 @Component({
   selector: 'app-repaso',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepasoComponent implements OnInit {
 
-  constructor() { }
+  cambio:string;
+  info:any[] = [];
+  
+  constructor(private repasar:RepasoService) {
+      this.info = repasar.GetInfo();
+  }
 
   ngOnInit(): void {
   }
