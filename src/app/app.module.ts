@@ -6,6 +6,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { EquipoService } from './equipo.service';
 import { RepasoService } from './repaso.service';
+import { FutbolService } from './futbol.service';
 
 //Componentes
 import { AppComponent } from './app.component';
@@ -18,6 +19,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { NosotrosComponent } from './nosotros/nosotros.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { RepasoComponent } from './repaso/repaso.component';
+import { FutbolComponent } from './futbol/futbol.component';
 
 const routes: Routes = [
   { path: 'horario', component: HorarioComponent },
@@ -26,6 +28,7 @@ const routes: Routes = [
   { path: 'equipo/:id', component: EquipoComponent },
   { path: 'nosotros', component: NosotrosComponent },
   { path: 'repaso', component: RepasoComponent },
+  { path: 'futbol', component: FutbolComponent },
   { path: '', component: InicioComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
@@ -41,7 +44,8 @@ const routes: Routes = [
     InicioComponent,
     NosotrosComponent,
     EquipoComponent,
-    RepasoComponent
+    RepasoComponent,
+    FutbolComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +53,8 @@ const routes: Routes = [
   ],
   providers: [
     EquipoService,
-    RepasoService
+    RepasoService,
+    FutbolService
   ],
   bootstrap: [AppComponent]
 })
